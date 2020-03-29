@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/index.js",
-    "build": "./node_modules/.bin/babel src -d dist",
+    "dev": "npx eslint src/ && nodemon src/index.js",
+    "build": "npx eslint src/ && npx babel src -d dist",
     "start": "node dist"
   },
   "devDependencies": {
